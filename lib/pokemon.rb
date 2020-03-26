@@ -19,7 +19,7 @@ class Pokemon
     SQL
 
     db.execute(sql).map do |row|
-      self(Row)
+      self.db(Row)
     end
   end
 
