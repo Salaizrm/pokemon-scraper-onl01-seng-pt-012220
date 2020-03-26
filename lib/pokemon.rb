@@ -13,14 +13,7 @@ class Pokemon
   end
 
   def self.save(name,type,db)
-    sql =<<-SQL
-    INSERT INTO pokemon (name, type)
-    VALUES (?,?)
-    SQL
-
-    db.execute(sql).map do |row|
-      self.new(Row)
-    end
+    db.execute("INSERT INTO pokemon (name, type) VALUES (?,?)")
   end
 
 
