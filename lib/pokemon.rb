@@ -12,7 +12,7 @@ class Pokemon
   end
 
   def self.save
-    @@all << self 
+    @@all << self
   end
 
 
