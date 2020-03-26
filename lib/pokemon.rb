@@ -27,7 +27,7 @@ class Pokemon
     FROM pokemon
     SQL
 
-    db.execute(sql)
+    db.execute(sql, name, type)
   end
 
 
