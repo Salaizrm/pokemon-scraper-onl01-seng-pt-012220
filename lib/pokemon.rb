@@ -22,6 +22,10 @@ class Pokemon
   end
 
   def self.find(name, type)
+    sql =<<-SQL
+
+    SQL
+
     db.execute("SELECT")
   end
 
