@@ -18,7 +18,9 @@ class Pokemon
     VALUES (?,?)
     SQL
 
-    db.execute(sql)
+    db.execute(sql).map do |row|
+      self(Row)
+    end
   end
 
 
